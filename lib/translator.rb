@@ -18,7 +18,7 @@ def get_japanese_emoticon(path, em_eng)
   em_lib = load_library(path)
   em_jap = em_lib.fetch('get_emoticon').find { |k, v| k == em_eng }
   if em_jap
-    em_jap.fetch
+    em_jap[0].fetch
 end
 
 def get_english_meaning(path, em_jap)
