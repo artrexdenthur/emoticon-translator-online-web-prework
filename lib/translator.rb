@@ -13,10 +13,12 @@ def load_library(path)
   em_lib
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(em_lib, em_eng)
   # code goes here
+  em_lib.fetch('get_emoticon').fetch(em_eng)
 end
 
-def get_english_meaning
+def get_english_meaning(em_lib, em_jap)
   # code goes here
+  em_lib.fetch('get_meaning').fetch(em_jap)
 end
