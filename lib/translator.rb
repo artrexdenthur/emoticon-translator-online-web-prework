@@ -19,7 +19,7 @@ def get_japanese_emoticon(path, em_eng)
   if em_lib.fetch('get_emoticon').has_key?(em_eng)
     em_lib.fetch('get_emoticon')[em_eng]
   else
-    'sorry'
+    'Sorry, that emoticon was not found'
   end
 end
 
