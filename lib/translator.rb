@@ -16,7 +16,7 @@ end
 def get_japanese_emoticon(path, em_eng)
   # code goes here
   em_lib = load_library(path)
-  em_lib.fetch('get_emoticon').fetch(em_eng)
+  em_jap = em_lib.fetch('get_emoticon').find(em_eng)
 end
 
 def get_english_meaning(path, em_jap)
