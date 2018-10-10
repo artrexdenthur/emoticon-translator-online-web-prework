@@ -1,5 +1,6 @@
 # require modules here
 require 'yaml'
+require 'pry'
 
 def load_library(path)
   # code goes here
@@ -26,5 +27,6 @@ end
 def get_english_meaning(path, em_jap)
   # code goes here
   em_lib = load_library(path)
+  binding.pry
   em_lib.fetch('get_meaning').fetch(em_jap)
 end
